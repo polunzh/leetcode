@@ -1,3 +1,5 @@
+var process = require('process');
+var os = require('os');
 // TODO: 算法有待改进
 /** 
  * Definition for singly-linked list.
@@ -43,9 +45,10 @@ var mergeTwoLists = function (l1, l2) {
 
 var print = function (l) {
     while (l !== null) {
-        console.log(l.val + ' ');
+        process.stdout.write(l.val + ' ');
         l = l.next;
     }
+    process.stdout.write(os.EOL);
 }
 
 node1 = new ListNode(11)

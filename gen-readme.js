@@ -6,13 +6,12 @@ const spliter = '<!--table-->';
 const jsSolutions = fs.readdirSync('javascript');
 const pySolutions = fs.readdirSync('python');
 const strMap = new Map();
-let name, idx;
+let name, idx, temp;
 
 function genStr(s, typeName, fileExt) {
-    typeName = typeName.toLowerCase();
     idx = s.indexOf('-');
     name = s.substring(idx + 1);
-    return `- ${s.substring(0, idx)} [${name}](${leetcodeUrl}${name})    [${typeName}](${githubUrl}${typeName}/${s}/${name}.${fileExt})`;
+    return `- ${s.substring(0, idx)} [${name}](${leetcodeUrl}${name})    [${typeName}](${githubUrl}${typeName.toLowerCase()}/${s}/${name}.${fileExt})`;
 }
 
 jsSolutions.forEach((item) => {
@@ -21,9 +20,8 @@ jsSolutions.forEach((item) => {
 
 pySolutions.forEach((item) => {
     if (strMap.has(item)) {
-        let temp = strMap.get(item);
+        temp = strMap.get(item);
         temp += ` | [Python](${githubUrl}python/${item}/${item.substring(item.indexOf('-') + 1)}.py)`;
-        console.log(temp);
         strMap.set(item, temp);
     } else {
         strMap.set(item, genStr(item, 'Python', 'py'));

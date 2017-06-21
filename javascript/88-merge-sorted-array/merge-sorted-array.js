@@ -1,4 +1,5 @@
-/** 有优化余地，第次一做的十分垃圾
+/** 第次一做的十分垃圾，失败！
+ *  虽然实现了，但是需要优化
  * Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
  * Note:
  * You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2.

@@ -17,7 +17,35 @@ var longestCommonPrefix = function (strs) {
     return prefix;
 };
 
-let str1 = 'cdefewef';
-let str2 = undefined;
-let str3 = 'd';
-console.log(longestCommonPrefix([str1, str2, str3]));
+/** 别人的解法
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix2 = function (strs) {
+    if (strs.length === 0) {
+        return "";
+    }
+
+    let prefix = strs[0];
+
+    for (let i = 1; i < strs.length; i++) {
+        while (prefix.length >= 0) {
+            if (strs[i].indexOf(prefix) !== 0) {
+                prefix = prefix.substring(0, prefix.length - 1);
+            } else {
+                break;
+            }
+        }
+
+        if (prefix.length === 0) {
+            break;
+        }
+    }
+
+    return prefix;
+};
+
+let str1 = 'abcdefewef';
+let str2 = 'abce';
+let str3 = 'abcd';
+console.log(longestCommonPrefix2([str1, str2, str3]));

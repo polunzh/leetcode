@@ -28,16 +28,22 @@ var addTwoNumbers = function (l1, l2) {
             return list;
         }
 
+        if (l1.next === null) {
+            l1.next = l2.next;
+            l1 = l1.next;
+            break;
+        }
+
         l1 = l1.next;
         l2 = l2.next;
     }
 
 
-    l1 = l1 === null ? l2 : l1;
-    console.log(l1)
-
     while (l1 !== null) {
+        // console.log(list);
+        // console.log(l1);
         l1.val = l1.val + n;
+        // console.log(l1);
 
         if (l1.val > 9) {
             l1.val = l1.val % 10;
@@ -46,11 +52,14 @@ var addTwoNumbers = function (l1, l2) {
             n = 0;
         }
 
-        l1 = l1.next;
-    }
+        if (l1.next === null) {
+            if (n === 1) {
+                l1.next = new ListNode(n);
+            }
 
-    if (n === 1) {
-        l1 = new ListNode(1);
+            return list;
+        }
+        l1 = l1.next;
     }
 
     return list;
@@ -73,11 +82,34 @@ list2.next = list3;
 list4.next = list5;
 list5.next = list6;
 
-// console.log(addTwoNumbers(list1, list4));
+console.log(addTwoNumbers(list1, list4));
 
-let l1 = new ListNode(0);
-let l2 = new ListNode(7);
-let l3 = new ListNode(3);
-l2.next = l3;
+let l1 = new ListNode(9);
+let l2 = new ListNode(8);
+let l3 = new ListNode(1);
+l1.next = l2;
 
-console.log(addTwoNumbers(l1, l2));
+console.log(addTwoNumbers(l1, l3));
+
+let li1 = new ListNode(0);
+let li2 = new ListNode(7);
+let li3 = new ListNode(3);
+li2.next = li3;
+
+console.log(addTwoNumbers(li1, li2));
+
+let lis1 = new ListNode(8);
+let lis2 = new ListNode(9);
+let lis3 = new ListNode(9);
+let lis4 = new ListNode(2);
+lis1.next = lis2;
+lis2.next = lis3;
+
+console.log(addTwoNumbers(lis1, lis4));
+
+let lii1 = new ListNode(1);
+let lii2 = new ListNode(9);
+let lii3 = new ListNode(9);
+lii2.next = lii3;
+
+console.log(addTwoNumbers(lii1, lii2));

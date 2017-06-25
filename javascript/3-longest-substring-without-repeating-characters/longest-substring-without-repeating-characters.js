@@ -31,9 +31,36 @@ var lengthOfLongestSubstring = function (s) {
     return result.length;
 };
 
-console.log(lengthOfLongestSubstring('dvdf'));
-console.log(lengthOfLongestSubstring('aab'));
-console.log(lengthOfLongestSubstring(''));
-console.log(lengthOfLongestSubstring('pwwkew'));
-console.log(lengthOfLongestSubstring('bbbb'));
-console.log(lengthOfLongestSubstring('abcabcbb'));
+var searchPos = function (s, target, start, end) {
+    for (let i = start; i < end; i++) {
+        if (s[i] === target) return i;
+    }
+
+    return -1;
+};
+
+var lengthOfLongestSubstring2 = function (s) {
+    let start = 0,
+        result = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        let nStart = searchPos(s, s[i], start, i);
+        if (nStart !== -1) {
+            if (result < i - start) {
+                result = i - start;
+            }
+            result = i - start > result ? i - start : result;
+            start = nStart + 1;
+        }
+    }
+
+    let len = s.length - start;
+    return len > result ? len : result;
+}
+
+console.log(lengthOfLongestSubstring2('dvdf'));
+console.log(lengthOfLongestSubstring2('aab'));
+console.log(lengthOfLongestSubstring2(''));
+console.log(lengthOfLongestSubstring2('pwwkew'));
+console.log(lengthOfLongestSubstring2('bbbb'));
+console.log(lengthOfLongestSubstring2('abcabcbb'));

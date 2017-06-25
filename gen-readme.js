@@ -11,7 +11,7 @@ let name, idx, temp;
 function genStr(s, typeName, fileExt) {
     idx = s.indexOf('-');
     name = s.substring(idx + 1);
-    return `- ${s.substring(0, idx)} [${name}](${leetcodeUrl}${name})    [${typeName}](${githubUrl}${typeName.toLowerCase()}/${s}/${name}.${fileExt})`;
+    return `| ${s.substring(0, idx)} | [${name}](${leetcodeUrl}${name})  |  [${typeName}](${githubUrl}${typeName.toLowerCase()}/${s}/${name}.${fileExt})|`;
 }
 
 jsSolutions.forEach((item) => {
@@ -21,7 +21,8 @@ jsSolutions.forEach((item) => {
 pySolutions.forEach((item) => {
     if (strMap.has(item)) {
         temp = strMap.get(item);
-        temp += ` | [Python](${githubUrl}python/${item}/${item.substring(item.indexOf('-') + 1)}.py)`;
+        temp = temp.substring(0, temp.lastIndexOf('|'));
+        temp += ` , [Python](${githubUrl}python/${item}/${item.substring(item.indexOf('-') + 1)}.py) |`;
         strMap.set(item, temp);
     } else {
         strMap.set(item, genStr(item, 'Python', 'py'));
@@ -40,6 +41,6 @@ const newMap = new Map([...strMap.entries()].sort((a, b) => {
 
 let oriContent = fs.readFileSync('README.md');
 let contentArray = oriContent.toString().split(spliter);
-contentArray[1] = spliter + '\n' + Array.from(newMap.values()).join('\n');
+contentArray[1] = spliter + `\n | # | Title  | Solution | \n |---|---|---| \n` + Array.from(newMap.values()).join('\n');
 fs.writeFile('README.md', contentArray.join(' '));
 console.log('README.md file generate success!');

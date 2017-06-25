@@ -1,6 +1,7 @@
 # leetcode
 leetcode exercises: https://leetcode.com/
-     <!--table-->
+      <!--table-->
+
  | # | Title  | Solution | 
  |---|---|---| 
 | 1 | [two-sum](https://leetcode.com/problems/two-sum)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/1-two-sum/two-sum.js)|

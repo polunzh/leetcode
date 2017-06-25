@@ -41,6 +41,6 @@ const newMap = new Map([...strMap.entries()].sort((a, b) => {
 
 let oriContent = fs.readFileSync('README.md');
 let contentArray = oriContent.toString().split(spliter);
-contentArray[1] = spliter + `\n | # | Title  | Solution | \n |---|---|---| \n` + Array.from(newMap.values()).join('\n');
+contentArray[1] = spliter + `\n\n | # | Title  | Solution | \n |---|---|---| \n` + Array.from(newMap.values()).join('\n');
 fs.writeFile('README.md', contentArray.join(' '));
 console.log('README.md file generate success!');

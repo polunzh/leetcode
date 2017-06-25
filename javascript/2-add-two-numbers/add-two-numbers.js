@@ -11,58 +11,30 @@
  * @return {ListNode}
  */
 var addTwoNumbers = function (l1, l2) {
-    let n = 0, list = l1;
-    while (l1 !== null && l2 !== null) {
-        l1.val = l1.val + l2.val + n;
-        if (l1.val > 9) {
-            l1.val = l1.val % 10;
-            n = 1;
-        } else {
-            n = 0;
-        }
+    let n = 0,
+        sum = 0,
+        result = [];
 
-        if (l1.next === null && l2.next === null) {
-            if (n === 1) {
-                l1.next = new ListNode(n);
-            }
-            return list;
-        }
-
-        if (l1.next === null) {
-            l1.next = l2.next;
+    while (l1 != null || l2 != null) {
+        sum = 0;
+        if (l1 != null) {
+            sum = l1.val;
             l1 = l1.next;
-            break;
         }
 
-        l1 = l1.next;
-        l2 = l2.next;
+        if (l2 != null) {
+            sum += l2.val;
+            l2 = l2.next;
+        }
+
+        sum += n;
+        n = sum > 9 ? 1 : 0;
+        result.push(sum % 10);
     }
 
+    if (n === 1) result.push(1);
 
-    while (l1 !== null) {
-        // console.log(list);
-        // console.log(l1);
-        l1.val = l1.val + n;
-        // console.log(l1);
-
-        if (l1.val > 9) {
-            l1.val = l1.val % 10;
-            n = 1;
-        } else {
-            n = 0;
-        }
-
-        if (l1.next === null) {
-            if (n === 1) {
-                l1.next = new ListNode(n);
-            }
-
-            return list;
-        }
-        l1 = l1.next;
-    }
-
-    return list;
+    return result;
 };
 
 function ListNode(val) {

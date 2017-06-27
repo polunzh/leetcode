@@ -1,6 +1,6 @@
 # leetcode
 leetcode exercises: https://leetcode.com/
-       <!--table-->
+        <!--table-->
 
  | # | Title  | Solution | 
  |---|---|---| 

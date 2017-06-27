@@ -1,12 +1,13 @@
 # leetcode
 leetcode exercises: https://leetcode.com/
-      <!--table-->
+       <!--table-->
 
  | # | Title  | Solution | 
  |---|---|---| 
 | 1 | [two-sum](https://leetcode.com/problems/two-sum)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/1-two-sum/two-sum.js)|
 | 2 | [add-two-numbers](https://leetcode.com/problems/add-two-numbers)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/2-add-two-numbers/add-two-numbers.js)|
 | 3 | [longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/3-longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.js)|
+| 6 | [zigzag-conversion](https://leetcode.com/problems/zigzag-conversion)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/6-zigzag-conversion/zigzag-conversion.js)|
 | 7 | [reverse-integer](https://leetcode.com/problems/reverse-integer)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/7-reverse-integer/reverse-integer.js) , [Python](https://github.com/polunzh/leetcode/blob/master/python/7-reverse-integer/reverse-integer.py) |
 | 9 | [palindrome-number](https://leetcode.com/problems/palindrome-number)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/9-palindrome-number/palindrome-number.js)|
 | 14 | [longest-common-prefix](https://leetcode.com/problems/longest-common-prefix)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/14-longest-common-prefix/longest-common-prefix.js)|

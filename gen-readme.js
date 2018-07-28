@@ -18,6 +18,8 @@ jsSolutions.forEach((item) => {
     strMap.set(item, genStr(item, 'JavaScript', 'js'));
 });
 
+console.log(jsSolutions);
+
 pySolutions.forEach((item) => {
     if (strMap.has(item)) {
         temp = strMap.get(item);
@@ -39,8 +41,10 @@ const newMap = new Map([...strMap.entries()].sort((a, b) => {
     else return 0;
 }));
 
+/*
 let oriContent = fs.readFileSync('README.md');
 let contentArray = oriContent.toString().split(spliter);
 contentArray[1] = spliter + `\n\n | # | Title  | Solution | \n |---|---|---| \n` + Array.from(newMap.values()).join('\n');
 fs.writeFile('README.md', contentArray.join(' '));
 console.log('README.md file generate success!');
+*/

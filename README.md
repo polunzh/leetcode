@@ -38,6 +38,7 @@
 | 561 | [array-partition-i](https://leetcode.com/problems/array-partition-i)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/561-array-partition-i.js) |
 | 704 | [binary-search](https://leetcode.com/problems/binary-search)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/704-binary-search.js) |
 | 717 | [add-binary](https://leetcode.com/problems/add-binary)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/717-add-binary.js) |
+| 724 | [find-pivot-index](https://leetcode.com/problems/find-pivot-index)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/724-find-pivot-index.js) |
 | 844 | [backspace-string-compare](https://leetcode.com/problems/backspace-string-compare)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/844-backspace-string-compare.js) |
 | 859 | [buddy-strings](https://leetcode.com/problems/buddy-strings)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/859-buddy-strings.js) |
 | 989 | [add-to-array-form-of-integer](https://leetcode.com/problems/add-to-array-form-of-integer)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/989-add-to-array-form-of-integer.js) |

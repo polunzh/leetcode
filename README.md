@@ -1,31 +1,43 @@
-# leetcode
-leetcode exercises: https://leetcode.com/
-         <!--table-->
+# LeetCode
 
- | # | Title  | Solution | 
+ | # | Title  | Solutions | 
  |---|---|---| 
-| merge | [sorted-array.js](https://leetcode.com/problems/sorted-array.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/merge-sorted-array.js/sorted-array.js.js)|
-|  | [sqrtx.js](https://leetcode.com/problems/sqrtx.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/sqrtx.js/sqrtx.js.js)|
-| reverse | [integer.py](https://leetcode.com/problems/integer.py)  |  [Python](https://github.com/polunzh/leetcode/blob/master/python/reverse-integer.py/integer.py.py)|
-| add | [binary.js](https://leetcode.com/problems/binary.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/add-binary.js/binary.js.js)|
-| add | [two-numbers.js](https://leetcode.com/problems/two-numbers.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/add-two-numbers.js/two-numbers.js.js)|
-| climbing | [stairs.js](https://leetcode.com/problems/stairs.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/climbing-stairs.js/stairs.js.js)|
-| count | [and-say.js](https://leetcode.com/problems/and-say.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/count-and-say.js/and-say.js.js)|
-| implement | [strstr.js](https://leetcode.com/problems/strstr.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/implement-strstr.js/strstr.js.js)|
-| length | [of-last-word.js](https://leetcode.com/problems/of-last-word.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/length-of-last-word.js/of-last-word.js.js)|
-| longest | [common-prefix.js](https://leetcode.com/problems/common-prefix.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/longest-common-prefix.js/common-prefix.js.js)|
-| longest | [substring-without-repeating-characters.js](https://leetcode.com/problems/substring-without-repeating-characters.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/longest-substring-without-repeating-characters.js/substring-without-repeating-characters.js.js)|
-| maximum | [subarray.js](https://leetcode.com/problems/subarray.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/maximum-subarray.js/subarray.js.js)|
-| zigzag | [conversion.js](https://leetcode.com/problems/conversion.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/zigzag-conversion.js/conversion.js.js)|
-| merge | [two-sorted-lists.js](https://leetcode.com/problems/two-sorted-lists.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/merge-two-sorted-lists.js/two-sorted-lists.js.js)|
-| palindrome | [number.js](https://leetcode.com/problems/number.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/palindrome-number.js/number.js.js)|
-| remove | [duplicates-from-sorted-list.js](https://leetcode.com/problems/duplicates-from-sorted-list.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/remove-duplicates-from-sorted-list.js/duplicates-from-sorted-list.js.js)|
-| remove | [element.js](https://leetcode.com/problems/element.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/remove-element.js/element.js.js)|
-| reverse | [integer.js](https://leetcode.com/problems/integer.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/reverse-integer.js/integer.js.js)|
-| search | [insert-position.js](https://leetcode.com/problems/insert-position.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/search-insert-position.js/insert-position.js.js)|
-| 206 | [reverse-linked-list.js](https://leetcode.com/problems/reverse-linked-list.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/206-reverse-linked-list.js/reverse-linked-list.js.js)|
-| two | [sum.js](https://leetcode.com/problems/sum.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/two-sum.js/sum.js.js)|
-| valid | [parentheses.js](https://leetcode.com/problems/parentheses.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/valid-parentheses.js/parentheses.js.js)|
-| 217 | [contains-duplicate.js](https://leetcode.com/problems/contains-duplicate.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/217-contains-duplicate.js/contains-duplicate.js.js)|
-| 242 | [valid-anagram.js](https://leetcode.com/problems/valid-anagram.js)  |  [JavaScript](https://github.com/polunzh/leetcode/blob/master/javascript/242-valid-anagram.js/valid-anagram.js.js)|
-| search | [insert-position.py](https://leetcode.com/problems/insert-position.py)  |  [Python](https://github.com/polunzh/leetcode/blob/master/python/search-insert-position.py/insert-position.py.py)|
+| 1 | [two-sum](https://leetcode.com/problems/two-sum)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/1-two-sum.js) |
+| 2 | [add-two-numbers](https://leetcode.com/problems/add-two-numbers)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/2-add-two-numbers.js) |
+| 3 | [longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/3-longest-substring-without-repeating-characters.js) |
+| 6 | [zigzag-conversion](https://leetcode.com/problems/zigzag-conversion)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/6-zigzag-conversion.js) |
+| 7 | [reverse-integer](https://leetcode.com/problems/reverse-integer)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/7-reverse-integer.js),[python](https://github.com/polunzh/leetcode/blob/master/python/7-reverse-integer.py) |
+| 9 | [palindrome-number](https://leetcode.com/problems/palindrome-number)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/9-palindrome-number.js) |
+| 14 | [longest-common-prefix](https://leetcode.com/problems/longest-common-prefix)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/14-longest-common-prefix.js) |
+| 20 | [valid-parentheses](https://leetcode.com/problems/valid-parentheses)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/20-valid-parentheses.js) |
+| 21 | [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/21-merge-two-sorted-lists.js) |
+| 27 | [remove-element](https://leetcode.com/problems/remove-element)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/27-remove-element.js) |
+| 28 | [implement-strstr](https://leetcode.com/problems/implement-strstr)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/28-implement-strstr.js) |
+| 35 | [search-insert-position](https://leetcode.com/problems/search-insert-position)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/35-search-insert-position.js),[python](https://github.com/polunzh/leetcode/blob/master/python/35-search-insert-position.py) |
+| 38 | [count-and-say](https://leetcode.com/problems/count-and-say)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/38-count-and-say.js) |
+| 53 | [maximum-subarray](https://leetcode.com/problems/maximum-subarray)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/53-maximum-subarray.js) |
+| 58 | [length-of-last-word](https://leetcode.com/problems/length-of-last-word)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/58-length-of-last-word.js) |
+| 67 | [add-binary](https://leetcode.com/problems/add-binary)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/67-add-binary.js) |
+| 69 | [sqrtx](https://leetcode.com/problems/sqrtx)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/69-sqrtx.js) |
+| 70 | [climbing-stairs](https://leetcode.com/problems/climbing-stairs)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/70-climbing-stairs.js) |
+| 83 | [remove-duplicates-from-sorted-list](https://leetcode.com/problems/remove-duplicates-from-sorted-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/83-remove-duplicates-from-sorted-list.js) |
+| 88 | [merge-sorted-array](https://leetcode.com/problems/merge-sorted-array)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/88-merge-sorted-array.js) |
+| 155 | [min-stack](https://leetcode.com/problems/min-stack)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/155-min-stack.js) |
+| 167 | [two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/167-two-sum-ii-input-array-is-sorted.js) |
+| 169 | [majority-element](https://leetcode.com/problems/majority-element)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/169-majority-element.js) |
+| 206 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/206-reverse-linked-list.js) |
+| 217 | [contains-duplicate](https://leetcode.com/problems/contains-duplicate)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/217-contains-duplicate.js) |
+| 225 | [implement-stack-using-queues](https://leetcode.com/problems/implement-stack-using-queues)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/225-implement-stack-using-queues.js) |
+| 231 | [power-of-two](https://leetcode.com/problems/power-of-two)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/231-power-of-two.js) |
+| 234 | [palindrome-linked-list](https://leetcode.com/problems/palindrome-linked-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/234-palindrome-linked-list.js) |
+| 237 | [delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/237-delete-node-in-a-linked-list.js) |
+| 242 | [valid-anagram](https://leetcode.com/problems/valid-anagram)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/242-valid-anagram.js) |
+| 258 | [add-digits](https://leetcode.com/problems/add-digits)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/258-add-digits.js) |
+| 415 | [add-strings](https://leetcode.com/problems/add-strings)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/415-add-strings.js) |
+| 504 | [base-7](https://leetcode.com/problems/base-7)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/504-base-7.js) |
+| 561 | [array-partition-i](https://leetcode.com/problems/array-partition-i)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/561-array-partition-i.js) |
+| 704 | [binary-search](https://leetcode.com/problems/binary-search)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/704-binary-search.js) |
+| 717 | [add-binary](https://leetcode.com/problems/add-binary)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/717-add-binary.js) |
+| 844 | [backspace-string-compare](https://leetcode.com/problems/backspace-string-compare)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/844-backspace-string-compare.js) |
+| 859 | [buddy-strings](https://leetcode.com/problems/buddy-strings)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/859-buddy-strings.js) |
+| 989 | [add-to-array-form-of-integer](https://leetcode.com/problems/add-to-array-form-of-integer)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/989-add-to-array-form-of-integer.js) |

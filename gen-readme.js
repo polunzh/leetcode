@@ -1,50 +1,76 @@
 const fs = require('fs');
-const githubUrl = 'https://github.com/polunzh/leetcode/blob/master/';
-const leetcodeUrl = 'https://leetcode.com/problems/';
-const spliter = '<!--table-->';
+const GITHUB_URL = 'https://github.com/polunzh/leetcode/blob/master/';
+const LEETCODE_URL = 'https://leetcode.com/problems/';
 
 const jsSolutions = fs.readdirSync('javascript');
 const pySolutions = fs.readdirSync('python');
-const strMap = new Map();
-let name, idx, temp;
 
-function genStr(s, typeName, fileExt) {
-    idx = s.indexOf('-');
-    name = s.substring(idx + 1);
-    return `| ${s.substring(0, idx)} | [${name}](${leetcodeUrl}${name})  |  [${typeName}](${githubUrl}${typeName.toLowerCase()}/${s}/${name}.${fileExt})|`;
+const fileTypeExtensionMap = new Map();
+fileTypeExtensionMap.set('javascript', 'js');
+fileTypeExtensionMap.set('python', 'py');
+
+/**
+ *
+ * @param {number} order
+ * @param {string} name
+ * @param {string[]} fileTypes
+ */
+const generateTableBodyRows = (order, name, fileTypes) => {
+  const solutions = fileTypes
+    .reduce((acc, cur) => {
+      acc.push(
+        `[${cur}](${GITHUB_URL}${cur.toLowerCase()}/${order}-${name}.${fileTypeExtensionMap.get(
+          cur
+        )})`
+      );
+
+      return acc;
+    }, [])
+    .join(',');
+
+  return `| ${order} | [${name}](${LEETCODE_URL}${name})  | ${solutions} |`;
+};
+
+/**
+ *
+ * @param {Map<number,string>} map
+ * @param {string[]} solutions
+ * @param {string} type
+ */
+const generateSolutionsMap = (map, solutions, type) => {
+  solutions.forEach(item => {
+    const tmpIndex = item.indexOf('-');
+    const order = Number(item.substring(0, tmpIndex));
+    const name = item.substring(tmpIndex + 1, item.lastIndexOf('.'));
+    if (map.get(order)) {
+      map.get(order).solutions.push(type);
+    } else {
+      map.set(order, { name, solutions: [type] });
+    }
+  });
+};
+
+let map = new Map();
+generateSolutionsMap(map, jsSolutions, 'javascript');
+generateSolutionsMap(map, pySolutions, 'python');
+
+map = new Map(
+  [...map.entries()].sort((x, y) => {
+    x = x[0];
+    y = y[0];
+
+    return x - y;
+  })
+);
+
+const tableBody = [];
+for (let [order, value] of map) {
+  tableBody.push(generateTableBodyRows(order, value.name, value.solutions));
 }
 
-jsSolutions.forEach((item) => {
-    strMap.set(item, genStr(item, 'JavaScript', 'js'));
-});
+const tableHeader =
+  '# LeetCode\n\n | # | Title  | Solutions | \n |---|---|---| \n';
 
-console.log(jsSolutions);
-
-pySolutions.forEach((item) => {
-    if (strMap.has(item)) {
-        temp = strMap.get(item);
-        temp = temp.substring(0, temp.lastIndexOf('|'));
-        temp += ` , [Python](${githubUrl}python/${item}/${item.substring(item.indexOf('-') + 1)}.py) |`;
-        strMap.set(item, temp);
-    } else {
-        strMap.set(item, genStr(item, 'Python', 'py'));
-    }
-});
-
-const newMap = new Map([...strMap.entries()].sort((a, b) => {
-    a = a[0];
-    b = b[0];
-    let aLen = Number(a.substring(0, a.indexOf('-'))),
-        bLen = Number(b.substring(0, b.indexOf('-')));
-    if (aLen < bLen) return -1;
-    else if (aLen > bLen) return 1;
-    else return 0;
-}));
-
-/*
-let oriContent = fs.readFileSync('README.md');
-let contentArray = oriContent.toString().split(spliter);
-contentArray[1] = spliter + `\n\n | # | Title  | Solution | \n |---|---|---| \n` + Array.from(newMap.values()).join('\n');
-fs.writeFile('README.md', contentArray.join(' '));
+const content = `${tableHeader}${tableBody.join('\n')}`;
+fs.writeFileSync('README.md', content);
 console.log('README.md file generate success!');
-*/

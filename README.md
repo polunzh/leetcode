@@ -27,6 +27,7 @@
 | 169 | [majority-element](https://leetcode.com/problems/majority-element)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/169-majority-element.js) |
 | 206 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/206-reverse-linked-list.js) |
 | 217 | [contains-duplicate](https://leetcode.com/problems/contains-duplicate)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/217-contains-duplicate.js) |
+| 224 | [basic-calculator](https://leetcode.com/problems/basic-calculator)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/224-basic-calculator.js) |
 | 225 | [implement-stack-using-queues](https://leetcode.com/problems/implement-stack-using-queues)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/225-implement-stack-using-queues.js) |
 | 231 | [power-of-two](https://leetcode.com/problems/power-of-two)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/231-power-of-two.js) |
 | 234 | [palindrome-linked-list](https://leetcode.com/problems/palindrome-linked-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/234-palindrome-linked-list.js) |

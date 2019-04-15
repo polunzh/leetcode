@@ -24,7 +24,9 @@
 | 88 | [merge-sorted-array](https://leetcode.com/problems/merge-sorted-array)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/88-merge-sorted-array.js) |
 | 155 | [min-stack](https://leetcode.com/problems/min-stack)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/155-min-stack.js) |
 | 167 | [two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/167-two-sum-ii-input-array-is-sorted.js) |
+| 168 | [excel-sheet-column-title](https://leetcode.com/problems/excel-sheet-column-title)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/168-excel-sheet-column-title.js) |
 | 169 | [majority-element](https://leetcode.com/problems/majority-element)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/169-majority-element.js) |
+| 171 | [excel-sheet-column-number](https://leetcode.com/problems/excel-sheet-column-number)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/171-excel-sheet-column-number.js) |
 | 206 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/206-reverse-linked-list.js) |
 | 217 | [contains-duplicate](https://leetcode.com/problems/contains-duplicate)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/217-contains-duplicate.js) |
 | 224 | [basic-calculator](https://leetcode.com/problems/basic-calculator)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/224-basic-calculator.js) |
@@ -43,6 +45,9 @@
 | 704 | [binary-search](https://leetcode.com/problems/binary-search)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/704-binary-search.js) |
 | 717 | [add-binary](https://leetcode.com/problems/add-binary)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/717-add-binary.js) |
 | 724 | [find-pivot-index](https://leetcode.com/problems/find-pivot-index)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/724-find-pivot-index.js) |
+| 771 | [jewels-and-stones](https://leetcode.com/problems/jewels-and-stones)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/771-jewels-and-stones.js) |
+| 784 | [letter-case-permutation](https://leetcode.com/problems/letter-case-permutation)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/784-letter-case-permutation.js) |
 | 844 | [backspace-string-compare](https://leetcode.com/problems/backspace-string-compare)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/844-backspace-string-compare.js) |
 | 859 | [buddy-strings](https://leetcode.com/problems/buddy-strings)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/859-buddy-strings.js) |
+| 888 | [fair-candy-swap](https://leetcode.com/problems/fair-candy-swap)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/888-fair-candy-swap.js) |
 | 989 | [add-to-array-form-of-integer](https://leetcode.com/problems/add-to-array-form-of-integer)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/989-add-to-array-form-of-integer.js) |

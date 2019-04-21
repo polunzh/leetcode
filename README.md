@@ -38,6 +38,7 @@
 | 258 | [add-digits](https://leetcode.com/problems/add-digits)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/258-add-digits.js) |
 | 415 | [add-strings](https://leetcode.com/problems/add-strings)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/415-add-strings.js) |
 | 463 | [island-perimeter](https://leetcode.com/problems/island-perimeter)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/463-island-perimeter.js) |
+| 496 | [next-greater-element-i](https://leetcode.com/problems/next-greater-element-i)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/496-next-greater-element-i.js) |
 | 504 | [base-7](https://leetcode.com/problems/base-7)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/504-base-7.js) |
 | 509 | [fibonacci-number](https://leetcode.com/problems/fibonacci-number)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/509-fibonacci-number.js) |
 | 561 | [array-partition-i](https://leetcode.com/problems/array-partition-i)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/561-array-partition-i.js) |

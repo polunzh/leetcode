@@ -3,7 +3,6 @@
  * @return {number}
  */
 var balancedStringSplit = function(s) {
-  var stack = [];
   var rCount = 0;
   var lCount = 0;
   var count = 0;
@@ -15,7 +14,6 @@ var balancedStringSplit = function(s) {
     }
 
     if(rCount===lCount){
-      stack = [];
       count++;
     }
   }

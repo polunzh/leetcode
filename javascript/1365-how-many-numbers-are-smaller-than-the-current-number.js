@@ -1,3 +1,5 @@
+/* 统计排序思路 */
+
 /**
  * @param {number[]} nums
  * @return {number[]}
@@ -10,7 +12,7 @@ var smallerNumbersThanCurrent = function(nums) {
     count[nums[i]]++;
   }
 
-  for (let i = 1; i < 100; i++) {
+  for (let i = 1; i < count.length; i++) {
     count[i] += count[i - 1];
   }
 
@@ -23,6 +25,7 @@ var smallerNumbersThanCurrent = function(nums) {
   }
 
   console.log(res);
+  return res;
 };
 
-smallerNumbersThanCurrent([4, 0, 1, 1, 3]);
+smallerNumbersThanCurrent([0, 0, 0, 0, 0]);

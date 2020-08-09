@@ -1,6 +1,6 @@
 # LeetCode
 
-JavaScript 76/1547 | Python 4/1547
+JavaScript 77/1547 | Python 4/1547
 
 ---
 
@@ -30,6 +30,7 @@ JavaScript 76/1547 | Python 4/1547
 | 83 | [remove-duplicates-from-sorted-list](https://leetcode.com/problems/remove-duplicates-from-sorted-list)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/83-remove-duplicates-from-sorted-list.js) |
 | 88 | [merge-sorted-array](https://leetcode.com/problems/merge-sorted-array)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/88-merge-sorted-array.js) |
 | 118 | [pascals-triangle](https://leetcode.com/problems/pascals-triangle)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/118-pascals-triangle.js) |
+| 136 | [single-number](https://leetcode.com/problems/single-number)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/136-single-number.js) |
 | 154 | [find-minimum-in-rotated-sorted-array-ii](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/154-find-minimum-in-rotated-sorted-array-ii.js) |
 | 155 | [min-stack](https://leetcode.com/problems/min-stack)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/155-min-stack.js) |
 | 167 | [two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/167-two-sum-ii-input-array-is-sorted.js) |

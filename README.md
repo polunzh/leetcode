@@ -1,7 +1,10 @@
 # LeetCode
+
 JavaScript 75/1547 | Python 4/1547
+
 ---
-# | LeetCode Title  | Solutions | 
+
+| # | LeetCode Title  | Solutions | 
  |---|---|---| 
 | 1 | [two-sum](https://leetcode.com/problems/two-sum)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/1-two-sum.js) |
 | 2 | [add-two-numbers](https://leetcode.com/problems/add-two-numbers)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/2-add-two-numbers.js) |

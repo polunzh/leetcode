@@ -70,19 +70,22 @@ for (let [order, value] of map) {
 }
 
 const tableHeader =
-  '# | LeetCode Title  | Solutions | \n |---|---|---| \n';
+  '| # | LeetCode Title  | Solutions | \n |---|---|---| \n';
 
 const generateStatus = ({ total, jsSolutionCount, pySolutionCount }) => {
   return `JavaScript ${jsSolutionCount}/${total} | Python ${pySolutionCount}/${total}`;
 };
 
 const content = `# LeetCode
+
 ${generateStatus({
   total: TOTAL,
   jsSolutionCount: jsSolutions.length,
   pySolutionCount: pySolutions.length,
 })}
+
 ---
+
 ${tableHeader}${tableBody.join('\n')}`;
 fs.writeFileSync('README.md', content);
 console.log('README.md file generate success!');

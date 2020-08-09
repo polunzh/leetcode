@@ -1,6 +1,6 @@
 # LeetCode
 
-JavaScript 77/1547 | Python 4/1547
+JavaScript 77/1547 | Go 1/1547 | Python 4/1547
 
 ---
 

@@ -21,5 +21,20 @@ const singleNumber = function (nums) {
   return [...map.keys()][0];
 };
 
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+const singleNumber2 = function (nums) {
+  let result = 0;
+  for (let i = 0; i < nums.length; i++) {
+    result ^= nums[i];
+  }
+
+  return result;
+};
+
 assert.equal(singleNumber([2, 2, 1]), 1);
 assert.equal(singleNumber([4, 1, 2, 1, 2]), 4);
+assert.equal(singleNumber2([2, 2, 1]), 1);
+assert.equal(singleNumber2([4, 1, 2, 1, 2]), 4);

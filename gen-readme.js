@@ -4,11 +4,13 @@ const LEETCODE_URL = 'https://leetcode.com/problems/';
 
 const jsSolutions = fs.readdirSync('javascript');
 const pySolutions = fs.readdirSync('python');
+const goSolutions = fs.readdirSync('go');
 
 const TOTAL = 1547;
 const fileTypeExtensionMap = new Map();
 fileTypeExtensionMap.set('javascript', 'js');
 fileTypeExtensionMap.set('python', 'py');
+fileTypeExtensionMap.set('go', 'go');
 
 /**
  *
@@ -69,11 +71,15 @@ for (let [order, value] of map) {
   tableBody.push(generateTableBodyRows(order, value.name, value.solutions));
 }
 
-const tableHeader =
-  '| # | LeetCode Title  | Solutions | \n |---|---|---| \n';
+const tableHeader = '| # | LeetCode Title  | Solutions | \n |---|---|---| \n';
 
-const generateStatus = ({ total, jsSolutionCount, pySolutionCount }) => {
-  return `JavaScript ${jsSolutionCount}/${total} | Python ${pySolutionCount}/${total}`;
+const generateStatus = ({
+  total,
+  jsSolutionCount,
+  goSolutionCount,
+  pySolutionCount,
+}) => {
+  return `JavaScript ${jsSolutionCount}/${total} | Go ${goSolutionCount}/${total} | Python ${pySolutionCount}/${total}`;
 };
 
 const content = `# LeetCode
@@ -82,6 +88,7 @@ ${generateStatus({
   total: TOTAL,
   jsSolutionCount: jsSolutions.length,
   pySolutionCount: pySolutions.length,
+  goSolutionCount: goSolutions.length,
 })}
 
 ---

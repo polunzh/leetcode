@@ -5,6 +5,7 @@ const LEETCODE_URL = 'https://leetcode.com/problems/';
 const jsSolutions = fs.readdirSync('javascript');
 const pySolutions = fs.readdirSync('python');
 
+const TOTAL = 1547;
 const fileTypeExtensionMap = new Map();
 fileTypeExtensionMap.set('javascript', 'js');
 fileTypeExtensionMap.set('python', 'py');
@@ -38,7 +39,7 @@ const generateTableBodyRows = (order, name, fileTypes) => {
  * @param {string} type
  */
 const generateSolutionsMap = (map, solutions, type) => {
-  solutions.forEach(item => {
+  solutions.forEach((item) => {
     const tmpIndex = item.indexOf('-');
     const order = Number(item.substring(0, tmpIndex));
     const name = item.substring(tmpIndex + 1, item.lastIndexOf('.'));
@@ -69,8 +70,19 @@ for (let [order, value] of map) {
 }
 
 const tableHeader =
-  '# LeetCode\n\n | # | Title  | Solutions | \n |---|---|---| \n';
+  '# | LeetCode Title  | Solutions | \n |---|---|---| \n';
 
-const content = `${tableHeader}${tableBody.join('\n')}`;
+const generateStatus = ({ total, jsSolutionCount, pySolutionCount }) => {
+  return `JavaScript ${jsSolutionCount}/${total} | Python ${pySolutionCount}/${total}`;
+};
+
+const content = `# LeetCode
+${generateStatus({
+  total: TOTAL,
+  jsSolutionCount: jsSolutions.length,
+  pySolutionCount: pySolutions.length,
+})}
+---
+${tableHeader}${tableBody.join('\n')}`;
 fs.writeFileSync('README.md', content);
 console.log('README.md file generate success!');

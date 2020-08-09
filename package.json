@@ -1,5 +1,11 @@
 {
   "devDependencies": {
-    "eslint": "^7.6.0"
+    "eslint": "^7.6.0",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "bash update-readme.sh"
+    }
   }
 }

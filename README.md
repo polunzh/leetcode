@@ -1,6 +1,6 @@
 # LeetCode
 
-JavaScript 78/1547 | Go 1/1547 | Python 4/1547
+JavaScript 79/1547 | Go 1/1547 | Python 4/1547
 
 ---
 
@@ -55,6 +55,7 @@ JavaScript 78/1547 | Go 1/1547 | Python 4/1547
 | 504 | [base-7](https://leetcode.com/problems/base-7)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/504-base-7.js) |
 | 509 | [fibonacci-number](https://leetcode.com/problems/fibonacci-number)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/509-fibonacci-number.js) |
 | 561 | [array-partition-i](https://leetcode.com/problems/array-partition-i)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/561-array-partition-i.js) |
+| 680 | [valid-palindrome-ii](https://leetcode.com/problems/valid-palindrome-ii)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/680-valid-palindrome-ii.js) |
 | 682 | [baseball-game](https://leetcode.com/problems/baseball-game)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/682-baseball-game.js) |
 | 704 | [binary-search](https://leetcode.com/problems/binary-search)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/704-binary-search.js) |
 | 705 | [design-hashset](https://leetcode.com/problems/design-hashset)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/705-design-hashset.js) |

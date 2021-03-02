@@ -1,6 +1,6 @@
 # LeetCode
 
-JavaScript 79/1547 | Go 1/1547 | Python 4/1547
+JavaScript 80/1547 | Go 1/1547 | Python 4/1547
 
 ---
 
@@ -49,6 +49,7 @@ JavaScript 79/1547 | Go 1/1547 | Python 4/1547
 | 242 | [valid-anagram](https://leetcode.com/problems/valid-anagram)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/242-valid-anagram.js) |
 | 258 | [add-digits](https://leetcode.com/problems/add-digits)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/258-add-digits.js) |
 | 268 | [missing-number](https://leetcode.com/problems/missing-number)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/268-missing-number.js) |
+| 278 | [first-bad-version](https://leetcode.com/problems/first-bad-version)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/278-first-bad-version.js) |
 | 415 | [add-strings](https://leetcode.com/problems/add-strings)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/415-add-strings.js) |
 | 463 | [island-perimeter](https://leetcode.com/problems/island-perimeter)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/463-island-perimeter.js) |
 | 496 | [next-greater-element-i](https://leetcode.com/problems/next-greater-element-i)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/496-next-greater-element-i.js) |

@@ -3,12 +3,23 @@
  * @return {number}
  */
 var lengthOfLastWord = function (s) {
-    s = s.trim();
-    var idx = s.lastIndexOf(' ');
-    if (idx === s.length - 1) return 0;
+  let current = 0;
+  for (let i = s.length - 1; i >= 0; i--) {
+    if (s[i] === ' ') {
+      if (current === 0) {
+        continue;
+      } else {
+        break;
+      }
+    } else {
+      if (s[i] !== ' ') {
+        current++;
+      }
+    }
+  }
 
-    return s.length - idx - 1;
+  return current;
 };
 
-console.log(lengthOfLastWord(" i   "));
-console.log(lengthOfLastWord("Hello   World"));
+console.log(lengthOfLastWord(' i   '));
+console.log(lengthOfLastWord('Hello   World'));

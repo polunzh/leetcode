@@ -1,6 +1,6 @@
 # LeetCode
 
-JavaScript 80/1547 | Go 1/1547 | Python 4/1547
+JavaScript 81/1547 | Go 1/1547 | Python 4/1547
 
 ---
 
@@ -71,6 +71,7 @@ JavaScript 80/1547 | Go 1/1547 | Python 4/1547
 | 859 | [buddy-strings](https://leetcode.com/problems/buddy-strings)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/859-buddy-strings.js) |
 | 884 | [uncommon-words-from-two-sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/884-uncommon-words-from-two-sentences.js) |
 | 888 | [fair-candy-swap](https://leetcode.com/problems/fair-candy-swap)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/888-fair-candy-swap.js) |
+| 925 | [long-pressed-name](https://leetcode.com/problems/long-pressed-name)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/925-long-pressed-name.js) |
 | 985 | [sum-of-even-numbers-after-queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/985-sum-of-even-numbers-after-queries.js) |
 | 989 | [add-to-array-form-of-integer](https://leetcode.com/problems/add-to-array-form-of-integer)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/989-add-to-array-form-of-integer.js) |
 | 1046 | [last-stone-weight](https://leetcode.com/problems/last-stone-weight)  | [javascript](https://github.com/polunzh/leetcode/blob/master/javascript/1046-last-stone-weight.js) |

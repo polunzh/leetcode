@@ -4,8 +4,6 @@
     "husky": "^4.2.5"
   },
   "husky": {
-    "hooks": {
-      "pre-push": "bash update-readme.sh"
-    }
+    "hooks": {}
   }
 }

@@ -2,6 +2,7 @@ package swapnodesinpairs
 
 import (
 	"testing"
+	. "leetcode/common"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -30,7 +31,7 @@ func Test1(t *testing.T) {
 	}
 
 	r1 := swapPairs(t1)
-	assert.Equal(t, []int{5, 2, 4, 3, 2, 6, 2}, treeToArray(r1))
+	assert.Equal(t, []int{5, 2, 4, 3, 2, 6, 2}, LinklistToArray(r1))
 }
 
 func Test2(t *testing.T) {
@@ -45,7 +46,7 @@ func Test2(t *testing.T) {
 	}
 
 	r1 := swapPairs(t1)
-	assert.Equal(t, []int{2, 1, 3}, treeToArray(r1))
+	assert.Equal(t, []int{2, 1, 3}, LinklistToArray(r1))
 }
 
 func Test3(t *testing.T) {
@@ -54,7 +55,7 @@ func Test3(t *testing.T) {
 	}
 
 	r1 := swapPairs(t1)
-	assert.Equal(t, []int{1}, treeToArray(r1))
+	assert.Equal(t, []int{1}, LinklistToArray(r1))
 }
 
 func Test4(t *testing.T) {

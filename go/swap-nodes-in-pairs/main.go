@@ -1,21 +1,8 @@
 package swapnodesinpairs
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-func treeToArray(head *ListNode) []int {
-	var res []int
-
-	cur := head
-	for cur != nil {
-		res = append(res, cur.Val)
-		cur = cur.Next
-	}
-
-	return res
-}
+import (
+	. "leetcode/common"
+)
 
 /**
  * Definition for singly-linked list.

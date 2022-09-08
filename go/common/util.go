@@ -32,3 +32,9 @@ func MakeLinkList(arr []int) *ListNode {
 
 	return head
 }
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}

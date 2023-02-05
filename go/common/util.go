@@ -1,5 +1,7 @@
 package common
 
+import "fmt"
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -37,4 +39,12 @@ type TreeNode struct {
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
+}
+
+func TraverseLinkList(list *ListNode) {
+	head := list
+	for head != nil {
+		fmt.Println(head.Val)
+		head = head.Next
+	}
 }

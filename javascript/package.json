@@ -1,10 +1,10 @@
 {
-  "name": "leetcode",
+  "name": "javascript",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",

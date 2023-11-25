@@ -36,7 +36,7 @@ const parseProblemName = (url) => {
 
   const obj = new URL(url);
   pathname = obj.pathname;
-  return pathname.split('/')[2];
+  return pathname.split('/')[2].toLowerCase();
 };
 
 const run = () => {

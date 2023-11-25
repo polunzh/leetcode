@@ -20,6 +20,8 @@ describe('${problemName}', () => {
 });  
 `
   );
+
+  console.log(`SUCCESS: Problem ${problemName} created.`);
 };
 
 /**

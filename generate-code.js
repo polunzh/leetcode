@@ -21,7 +21,7 @@ describe('${problemName}', () => {
 `
   );
 
-  console.log(`SUCCESS: Problem ${problemName} created.`);
+  console.log(`SUCCESS: Problem ${path.relative(__dirname, p)} created.`);
 };
 
 /**
